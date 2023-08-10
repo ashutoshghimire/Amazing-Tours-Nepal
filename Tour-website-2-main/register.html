@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Travel</title>
+    <link rel="stylesheet" href="register.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="register-card">
+            <h1>Register for Your Journey</h1>
+            <form class="register-form" id="registrationForm" method="POST">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Create a Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up for Adventure</button>
+            </form>
+            <p>Already have an account? <a href="index_login.html">Log In</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Handle form submission using JavaScript
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            
+
+            // Redirect to index_login.html after successful submission
+            window.location.href = "index_login.html";
+        });
+    </script>
+</body>
+</html>
